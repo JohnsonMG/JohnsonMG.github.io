@@ -75,17 +75,22 @@ body {
             width: 1rem;
         }
 
+        div {
+            margin-bottom: 0.25rem;
+        }
+
         dd {
             margin-inline-start: 1rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
         }
 
         .email {
             font-size: large;
             font-weight: 500;
-            a {
-                text-decoration: none;
-                color: inherit;
-            }
         } 
     }
 

@@ -6,6 +6,7 @@ html {
     background-color: white;
     font-family: 'Red Hat Display', sans-serif;
     font-size: 12px;
+    padding: 1rem;
 }
 
 body {
@@ -14,7 +15,7 @@ body {
     --on-primary: whitesmoke;
     --accent: #bf4343;
     background-color: whitesmoke;
-    margin: 1rem;
+    margin: 0 auto;
     padding: 1rem;
     border-radius: 1rem;
     display: flex;

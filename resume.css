@@ -1,0 +1,144 @@
+p, ul, h1, h2, h3, h4, h5 {
+    margin: 0.5rem 0;
+}
+
+html {
+    background-color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    --primary: #012e6e;
+    --secondary: #2f5187;
+    --on-primary: whitesmoke;
+    --accent: #bf4343;
+    background-color: whitesmoke;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+
+    li::marker {
+        color: var(--primary);
+    }
+
+    h2 {
+        margin-top: 2rem;
+        background-color: var(--primary);
+        width: 100%;
+        color: var(--on-primary);
+        padding: 0.25rem 1rem;
+        box-sizing: border-box;
+        font-size: larger;
+        font-weight: normal;
+        border-radius: 5px;
+    }
+}
+
+.sidebar {
+    border-right: 1px solid var(--primary);
+    margin-right: 1rem;
+    padding-right: 1rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 19rem;
+    display: flex;
+    flex-direction: column;
+
+    .avatar {
+        height: 15rem; /* sidebar width - 4 (2rem on each side) */
+        width: 15rem;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid var(--primary);
+        margin: 2rem 1rem 1rem 2rem;
+        object-fit: cover;
+    }
+
+    .skills {
+        font-weight: 500;
+        color: var(--secondary);
+    }
+
+    .contact-info {
+        color: var(--accent);
+        margin: 0;
+        div {
+            display: flex;
+            align-items: center;
+        }
+        margin-bottom: 2rem;
+        svg {
+            width: 1rem;
+        }
+
+        dd {
+            margin-inline-start: 1rem;
+        }
+
+        .email {
+            font-size: large;
+            font-weight: 500;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        } 
+    }
+
+    .footnote {
+        margin-top: auto;
+    }
+}
+
+main {
+    flex-grow: 1;
+    flex-shrink: 1;
+    height: fit-content;
+    margin-bottom: 1rem;
+
+    .name {
+        font-size: xx-large;
+        color: var(--primary);
+        text-transform: uppercase;
+        font-weight: 600;
+        text-align: center;
+        margin: 0;
+        line-height: 2.5rem;
+    }
+
+    h2 {
+        margin-top: 1rem;
+    }
+
+    section {
+        .position {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+               color: var(--secondary);
+            }
+
+            .timespan {
+                color: var(--accent);
+                font-weight: 500;
+            }
+        }
+
+        h5 {
+            text-indent: 1rem;
+        }
+    }
+
+    .degree {
+        margin-bottom: 0;
+    }
+    .subtext {
+        margin: 0;
+        color: var(--secondary);
+        font-weight: 500;
+    }
+}

@@ -19,6 +19,7 @@ body {
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
+    max-width: 90rem;
 
     li::marker {
         color: var(--primary);
